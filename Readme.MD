@@ -1,0 +1,2 @@
+# Place your bets!
+... Okay not really.  It's Blackjack, in CLI form!  Thankfully this is the first capstone projefct so hopefully we'll be moving on to something more useful than a tip calculator soon lol
