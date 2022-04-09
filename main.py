@@ -23,6 +23,19 @@ for i in range(2):
         dealerHand.append(dealCard())
         playerHand.append(dealCard())
 
+# Okay, I struggled with this for awhile before I finally gave in
+# and watched how she did it :P  I tried! :)  In my defense,
+# as soon as she mentioned the method to use, I paused the
+# video and solved the rest myself lol
+
+def score(cards):
+    """Calculate the score to see if it's under or over 21 and if Blackjack occurs."""
+    if sum(cards) == 21 and len(cards) == 2:
+        return 0    
+    if 11 in (cards) and sum(cards) > 21:
+        cards.remove(11)
+        cards.append(1)
+    return sum(cards)
 
 # Dealer hand shows index 0 only because player only gets
 # to see Dealer's first card until the hand ends.
