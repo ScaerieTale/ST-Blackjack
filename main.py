@@ -7,9 +7,6 @@ def dealCard(): # Note to self. () are important dum dum!
     return dealtCard
 dealerHand = []
 playerHand = []
-#initial round of first two cards
-# sidenote: TIL "_" is the universal symbol for a
-# var that will never be called again.  Who knew?
 for _ in range(2):
         dealerHand.append(dealCard())
         playerHand.append(dealCard())
@@ -29,9 +26,6 @@ dealerScore = score(dealerHand)
 # to see Dealer's first card until the hand ends.
 print(f"""Dealer shows {dealerHand[0]} {dealerScore}
 You have {playerHand} {playerScore}""")
-
-# NOTE TO SLEF = sets, == CHECKS. :)
-# Also, no help beyond this point.  I worked this out myself darn it :)
 while gameOver == False:
     if dealerScore == 0 or playerScore == 0 or playerScore > 21:
         gameOver = True
